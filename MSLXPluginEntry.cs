@@ -13,7 +13,7 @@ public class MSLXPluginEntry : IPlugin
     public string Id => "mslx-plugin-gfs-backup"; 
     public string Name => "GFS分层备份";
     public string Description => "解决定时备份容易爆硬盘、无法长久留存的烦恼！自动从日常定时备份中提取出「日备份、周备份、月备份」的长线历史存档。支持 0 额外磁盘占用的黑科技归档，常规备份滚动删除后依然完好保留。";
-    public string Version => "1.0.1";
+    public string Version => "1.0.2";
     public string Icon => "icon.png";
     public string MinSDKVersion => "1.6.4";
     public string Developer => "xiaoyu";

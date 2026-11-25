@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using MSLX.Plugin.Gfs.Backup.Models;
 using MSLX.Plugin.Gfs.Backup.Services;
 using MSLX.SDK;
-using MSLX.SDK.IServices;
 using MSLX.SDK.Models;
 using Newtonsoft.Json.Linq;
 
@@ -12,13 +11,6 @@ namespace MSLX.Plugin.Gfs.Backup.Controllers;
 [Route("api/plugins/mslx-plugin-gfs-backup")]
 public class GfsBackupController : ControllerBase
 {
-    private readonly IMCServerService _serverService;
-
-    public GfsBackupController(IMCServerService serverService)
-    {
-        _serverService = serverService;
-    }
-
     /// <summary>
     /// 获取当前实例的 GFS 配置
     /// </summary>
